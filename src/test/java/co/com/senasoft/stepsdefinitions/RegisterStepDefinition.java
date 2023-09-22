@@ -24,7 +24,7 @@ public class RegisterStepDefinition {
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));
     }
     @Given("That the user enters to the web page")
-    public void thatTheUserEntersToTheWebPage() {
+    public void thatTheUserEntersToTheWebPage() throws InterruptedException {
        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.koaj.co/"));
     }
 
